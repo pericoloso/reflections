@@ -33,15 +33,15 @@ ommando zou zijn, vb. "Voeg les 1 reflections toe"
 - git diff: Als je dit commando zonder arguments uitvoert, zie je het 
 verschil tussen de working directory en de staging area.
 (Als er niets in de staging area zit, wordt de working directory met de repo
-zien, denk ik.)
+zien, denk ik .)
 
 
 - git diff --staged: Laat het verschil zien tussen de staging area en de
 repository
- - git reset --hard: Verwijdert al de wijzigingen in de working directory en
- de staging area.
- - git checkout master: Keer terug naar de meest recente commit, als je in 
- "detached HEAD' state bent.
+- git reset --hard: Verwijdert al de wijzigingen in de working directory en
+de staging area.
+- git checkout master: Keer terug naar de meest recente commit, als je in 
+"detached HEAD' state bent.
 
 6. -------------
 
@@ -49,12 +49,18 @@ De huidige laatste commit op een branch wordt de 'tip' genoemd.
 
 7. -------------
 
-git branch: Toon al de aanwezige branches.
-git branch <naam>: Maak een nieuwe branch met de naam <naam>
+- git branch: Toon al de aanwezige branches.
+- git branch <naam>: Maak een nieuwe branch met de naam <naam>
 
-ctrl + u: Clear een volledige lijn in bash.
+- ctrl + u: Clear een volledige lijn in bash.
 
+8. -------------
+- git log --graph --oneline <branch1> <branch2> ... <branchn>: Geef een one-line
+grafische weergave van de commit geschiedenis op verschillende branches.
 
+9. -------------
+- git log geeft de historiek weer van een bepaalde branch. Het gaat doet doen
+door naar de 'parent' van elke commit te kijken, nl. de commit vóór elke commit.
 
 
 

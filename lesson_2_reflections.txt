@@ -40,3 +40,16 @@ werken. Wanneer de feature uiteindelijk werkt, kan je de verschillende branches
 samenvoegen (ook wel mergen genoemd).
 
 Een andere toepassing is wanneer je een versie in een andere taal wil maken.
+
+Het geeft je ook de mogelijkheid om even te werken aan een andere feature in
+de software, als je al heel lang een eenzelfde feature werkt. Op die manier
+laten branches je toe om van context te veranderen.
+
+5. ------------
+Question: How do the diagrams help you visualize the branch structure?
+
+De diagram geeft een overzicht van de overerving van commits, m.a.w. van
+welke commit een bepaalde commit afkomstig is.
+
+Je ziet ook duidelijk waar nieuwe branches afgetakt zijn.
+
