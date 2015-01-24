@@ -28,3 +28,43 @@ area verwijderd).
 commando wordt je text editor (Sublime) geopend, om een commit message toe te
 voegen. Commit messages worden in Git standaard geschreven alsof het een c
 ommando zou zijn, vb. "Voeg les 1 reflections toe"
+
+5. ------------
+- git diff: Als je dit commando zonder arguments uitvoert, zie je het 
+verschil tussen de working directory en de staging area.
+(Als er niets in de staging area zit, wordt de working directory met de repo
+zien, denk ik.)
+
+
+- git diff --staged: Laat het verschil zien tussen de staging area en de
+repository
+ - git reset --hard: Verwijdert al de wijzigingen in de working directory en
+ de staging area.
+ - git checkout master: Keer terug naar de meest recente commit, als je in 
+ "detached HEAD' state bent.
+
+6. -------------
+
+De huidige laatste commit op een branch wordt de 'tip' genoemd.
+
+7. -------------
+
+git branch: Toon al de aanwezige branches.
+git branch <naam>: Maak een nieuwe branch met de naam <naam>
+
+ctrl + u: Clear een volledige lijn in bash.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

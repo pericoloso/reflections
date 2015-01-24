@@ -21,3 +21,22 @@ Wanneer ze committed zijn, behoren ze tot de repository.
 Een voordeel dat de staging area biedt, is dat je kan selecteren welke files
 zullen behoren tot de volgende commit. Op die manier worden niet telkens alle
 files gecommit.
+
+3. ------------
+Question: How can you use the staging area to make sure you have one commit
+per logical change?
+
+Door enkel de files te stagen die wijzigingen hebben ondergaan m.b.t. één
+logical change kan je ervoor zorgen dat je commits ook een enkele logical
+change bevatten.
+
+4. ------------
+Question: What are some situations when branches would be helpful in keeping
+your history organized? How would branches help?
+
+Branches zijn handig wanneer je aan een experimentele feature wil werken,
+die risicovol is en waarvan je niet zeker bent dat het programma nog gaat
+werken. Wanneer de feature uiteindelijk werkt, kan je de verschillende branches
+samenvoegen (ook wel mergen genoemd).
+
+Een andere toepassing is wanneer je een versie in een andere taal wil maken.
