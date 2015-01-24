@@ -43,27 +43,53 @@ de staging area.
 - git checkout master: Keer terug naar de meest recente commit, als je in 
 "detached HEAD' state bent.
 
-6. -------------
+6. ------------
 
 De huidige laatste commit op een branch wordt de 'tip' genoemd.
 
-7. -------------
+7. ------------
 
 - git branch: Toon al de aanwezige branches.
 - git branch <naam>: Maak een nieuwe branch met de naam <naam>
 
 - ctrl + u: Clear een volledige lijn in bash.
 
-8. -------------
+8. ------------
 - git log --graph --oneline <branch1> <branch2> ... <branchn>: Geef een one-line
 grafische weergave van de commit geschiedenis op verschillende branches.
 
-9. -------------
+9. ------------
 - git log geeft de historiek weer van een bepaalde branch. Het gaat doet doen
 door naar de 'parent' van elke commit te kijken, nl. de commit vóór elke commit.
 
+10. -----------
+Wanneer je twee branches merged, ontstaat er een nieuwe commit.
+Eén van de twee branchnamen wordt overgenomen en één ervan verdwijnt.
+Als je git log opvraagt van de nieuwe branch, zie je dat de commits van
+de twee parent-branches allemaal getoond worden.
+De volgorde waarin deze getoond worden is gebaseerd op de timestamp. 
 
+11. -----------
+- git show <commit_id>: Geeft de wijzigingen weer tussen een commit en zijn parent.
+- git merge <branchnaam>: Merged de branch met branchnaam in de huidige branch.
+- git branch -d coins: Verwijdert branch coins (-d staat voor delete).
+De commits zelf worden niet verwijderd, enkel het label van de branch.
+De branch die checked out was, geeft zijn naam aan de nieuwe merged branch.
 
+- git merge --abort: Als je merge conflicts krijgt, kan je de merge met die
+commando aborten.
+
+12. -----------
+Git kan natuurlijk niet altijd een auto-merge uitvoeren.
+Wanneer Git merkt dat er in dezelfde area veranderingen zijn aangebracht, laat
+het aan de user weten dat er een merge conflict is.
+Dit kan vervelend zijn, maar is beter dan dat Git zelf zou gaan raden hoe deze
+merge uitgevoerd zou moeten worden, wat zou kunnen leiden tot vreemde 
+samenraapsels van code.
+
+13. -----------
+Als er bij een merge conflicts waren, en je hebt deze opgelost, zie je in de
+merge commit toch nog een vermelding dat er een zich een conflict had voorgedaan.
 
 
 

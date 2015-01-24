@@ -53,3 +53,31 @@ welke commit een bepaalde commit afkomstig is.
 
 Je ziet ook duidelijk waar nieuwe branches afgetakt zijn.
 
+6. ------------
+Question: What is the result of merging two branches together? Why do we
+represent it in the diagram the way we do?
+
+Het resultaat van het mergen van twee branches, is dat we opnieuw een branch
+hebben. De merge creëert een nieuwe commit, die twee parents heeft, nl. 
+een commit uit de twee parent branches.
+
+In de diagram zie je duidelijk de overerving van de merge commit.
+
+7. ------------
+Question: What are the pros and cons of Git's automatic merging vs. always
+doing merges manually?
+
+Automatic merging:
+Pro: Git slaagt er redelijk goed in om verschillende branches samen te voegen.
+Het is dus een groot voordeel om dit niet manueel te moeten doen.
+
+Con: Bij conflicten gaat Git twee branches samenvoegen, maar is de kans groot
+dat de code niet zal runnen. Git geeft echter goede aanwijzingen over waar de 
+problemen zitten.
+
+Manual merging:
+Pro: Bij conflicts is de programmeur intelligenter dan Git, om te bepalen wat
+in de finale file-versie moet zitten en wat niet.
+
+Con: Altijd manueel mergen voegt volgens mij onnodig veel werk toe voor de
+programmeur.
