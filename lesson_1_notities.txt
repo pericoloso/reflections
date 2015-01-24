@@ -1,0 +1,97 @@
+1. ------------
+Dropbox, Google Docs en Wikipedia hebben allemaal een vorm van version control,
+die toelaat om een geschiedenis van versies te bekijken.
+
+2. ------------
+Het versiebeheer van Dropbox, Google Docs en Wikipedia is niet erg geschikt 
+voor programmeurs. Hun documenten zijn niet altijd editeerbaar met eender welke
+editor. En het is ook niet altijd mogelijk om offline te werken.
+
+3. ------------
+CVS (Concurrent Version Systems), SVN (Subversion), Mercurial (Hg) en Git zijn 
+soorten van versiebeheer systemen.
+
+Git vereist manual saving. Dit houdt steek omdat je op die manier meestal
+betekenisvolle checkpoints hebt in de code historiek, in tegenstelling 
+tot automatische saves. Deze checkpoints heten commits.
+
+4. ------------
+git diff laat verschillen zien tussen verschillende commits.
+
+5. ------------
+Het is een goed idee om commits klein te houden. Anders wordt de diff
+tussen twee files groter en groter, is het moeilijker te begrijpen
+en minder bruikbaar. Te kleine commits maken de historiek dan weer moeilijk
+leesbaar.
+
+Een goede regel is om een commit te maken per logical change.
+Elke commit moet dus een duidelijk logisch doel hebben.
+Dit is een judgement call.
+
+6. ------------
+"competition-style coding" zijn programmeerwedstrijden waarbij deelnemers
+een probleem moeten oplossen in een enkele file.
+
+7. ------------
+Commits gebeuren niet altijd op een enkele file, maar vaak ook op een 
+verzameling van files. Zo'n verzameling van files wordt in Git 
+een repository genoemd.
+
+Een commit is dus een snapshot van al de files in je repository op het moment
+dat je de commit uitvoert.
+
+git log --stat: Dit geeft een log weer met statistieken van welke files
+er veranderd zijn in elke commit.
+
+8. ------------
+Bij het werken aan grote projecten is het handig om stap voor stap te werken
+en individueel door al je fouten te kunnen browsen.
+
+De leercurve bij Git kan best stijl zijn, maar eens je het beheerst zijn
+de mogelijkheden heel uitgebreid en kan je dingen doen die je er zonder
+niet had gekund.
+
+9. ------------
+- git log: Geef een log weer van al de voorbije commits
+- git diff commit_a commit_b: Geef het verschil weer van commit_a en commit_b
+- git config --global color.ui auto: Configureer Git zodat de wijzingingen in
+kleur worden weergegeven.
+
+10. -----------
+Octopus is een strategie die Git gebruikt om verschillende versies van code
+samen te voegen.
+"Should not be doing an octopus" is een error message die je krijgt wanneer
+je de octopus strategie in een ongepaste situatie probeert uit te voeren.
+
+HEAD is een benaming van Git voor de commit waar je momenteel op werkt.
+"You are in 'detached' HEAD state" is een waarschuwing die Git geeft
+wanneer je switcht naar een vroegere commit.
+
+GHC is de compiler van de programmeertaal Haskell.
+Een van de errors die GHC kan geven is:
+"Panic! (the 'impossible' happened)"
+
+11. -----------
+- git checkout: Dit laat je toe om je repository naar een bepaalde commit
+terug te switchen. Merk op dat een checkout in SVN en Git niet hetzelfde zijn:
+
+In Git betekent het dat je al je files gaat 'resetten' naar hoe ze waren bij
+een vorige commit.
+
+Bij het uitchecken plaatsen je de commit ID na het commando. In plaats van het 
+volledige ID, mag je ook een verkorte versie van minstens 4 karakters invoeren.
+
+Om snel te copy/pasten in de Command Prompt (Windows) kan je QuickEdit aanzetten.
+Dan kan je geselecteerde tekst kopiëren met een rechtermuisklik en ook plakken
+met een rechtermuisklik.
+
+12. ------------
+Het openen van Sublime via het subl commando wordt mogelijk gemaakt door de
+volgende lijn toe te voegen aan je .bash_profile:
+
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+
+
+
+

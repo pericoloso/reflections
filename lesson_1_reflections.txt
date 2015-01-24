@@ -1,0 +1,100 @@
+1. ------------
+Question: How did viewing a diff between two versions of a file help you 
+see the bug that was introduced?
+
+Door twee text files met elkaar te vergelijken,
+met diff (Mac) of FC (Windows) kan je snel zien waar er iets is veranderd.
+
+Op die manier is het niet nodig om beide files volledig te vergelijken,
+en kan je op een gerichte manier de wijzigingen controleren op mogelijke
+fouten die erin geslopen zijn.
+
+Dit is heel handig voor het schrijven van code.
+Als het eerste bestand correct werkte, en het tweede bestand niet meer,
+is het hoogstwaarschijnlijk dat de 'bug' in één van de wijzigingen zit.
+
+2. ------------
+Question: How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+Het is makkelijker om bugs op te sporen, aangezien je snel kan zien waar er
+wijzigingen zijn toegepast. Dit laat je toe op sneller en productiever bugs te fixen.
+
+Tevens kan je makkelijker ervoor kiezen om oudere software versie te blijven
+supporteren.
+
+3. ------------
+Question: As a programmer, when would you want to have a version of your code saved?
+
+- At regular intervals - Dit lijkt mij niet efficient, aangezien je in gelijke
+intervals soms heel weinig en soms heel veel wijzigingen kan maken.
+
+- Whenever a large enough change is made - Ook deze optie lijkt niet optimaal. 
+Het kan zijn dat een belangrijke wijziging slechts enkele regels beslaat. Deze 
+wijziging wordt dan niet gecommit.
+
+- Whenever there is a long pause in editing - Deze optie lijkt iets 
+interessanter, aangezien het lijkt dat gecommit wordt nadat de 
+programmeur een bepaald gedeelte van het werk gedaan heeft.
+
+- When you choose to save a version - Dit lijkt mij de beste optie. 
+Het is aan de programmeur om te beslissen wanneer changes gecommit moeten worden.
+
+4. -------------
+Question: What do you think are the pros and cons of manually choosing when to
+create a commit, like you do in Git, vs having versions automatically saved,
+like Google Docs does?
+
+Pros:
+- De commits die je maakt omvatten een logische eenheid, vb. één bugfix, 
+enkele typo correctiets, een nieuwe feature.
+
+- De historiek bestaat uit een duidelijke opeenvolging van toevoegingen.
+
+Cons:
+- Een programmeur kan door vergetelheid zijn commits te lang uitstellen,
+waardoor de diff te groot wordt om bruikbaar te zijn.
+
+5. -------------
+Question: Why do you think some version control systems, like Git, allow saving
+multiple files in one commit, while other, like Google Docs, treat each file
+separately?
+
+In Git worden per commit meerdere files opgeslaan, omdat deze files vaak van 
+elkaar afhankelijk zijn en samenhoren.
+
+In Google Docs daarentegen, is het aanvaardbaar dat documenten individueel worden
+behandeld, aangezien ze (niet snel) afhankelijk zijn van elkaar.
+
+6. ------------
+Question: How can you use the commands git log and git diff to view the history
+of files?
+
+git log: Dit geeft een historiek weer van al de commits.
+git diff: Dit commando laat je toe om het verschil tussen twee commits te tonen.
+
+7. ------------
+Question: How might using version control make you more confident to make
+changes that could break something?
+
+Je durft sneller dingen uitproberen omdat je met het git checkout commando
+snel terug kan gaan naar een de staat van een bepaalde commit.
+Met version control durf je ook grotere architecturale wijzigingen door te voeren
+in plaats van met kleine veilige incrementele stappen de software beter te maken.
+
+8. ------------
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Ik zou het willen gebruiken voor versiebeheer van de lessen die ik schrijf,
+python programma's, applescript scripts, en webpagina's in html & css.
+
+
+
+
+
+
+
+
+
+
+
