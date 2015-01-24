@@ -1,0 +1,23 @@
+1. ------------
+Question: What happens when you initialize a repository? 
+Why do you need to do it?
+
+Als je een repository initialiseert wordt er een verborgen directory aangemaakt 
+indie repository, genaamd '.git'. In deze directory wordt metadata bewaard 
+m.b.t. de historiek van repository.
+
+Deze folder wordt onzichtbaar gemaakt, omdat de user er niet rechtsreeks mee 
+moet interageren. Het onzichtbaar maken doet het OS door een '.' te plaatsen 
+voor de directorynaam.
+
+2. ------------
+Question: How is the staging area different from the working directory and the
+repository? What value do you think it offers?
+
+In de staging area staan de bestanden die in je volgende commit gaan zitten.
+Het gaat hier over modified files, die nog niet behoren tot de repository.
+Wanneer ze committed zijn, behoren ze tot de repository.
+
+Een voordeel dat de staging area biedt, is dat je kan selecteren welke files
+zullen behoren tot de volgende commit. Op die manier worden niet telkens alle
+files gecommit.

@@ -1,0 +1,30 @@
+1. ------------
+Een Git repository ziet er uit als een normale directory, maar bevat een
+verborgen directory, genaamd '.git', die metadata bevat.
+De directory is verborgen omdat de user er niet rechtstreeks mee hoeft te 
+interageren.
+
+2. ------------
+Om een nieuwe repository te maken
+
+- git init: Maak een nieuwe repository aan in de huidige directory.
+Als je ls -a uitvoert in de repository, zie je dat er een '.git' folder is
+aangemaakt.
+
+- git status: Geef de status van de huidige repository weer.
+
+3. ------------
+Voor je van 'working directory' naar een 'repository gaat', moet je bestanden
+in de 'staging area' plaatsen. Deze area is een intermediare status, waar je
+al de bestanden plaatst die je wil gaan committen.
+
+- git add [filename]: Voeg een bestand toe aan de staging area.
+- git reset [filename]: Reset de staging area (alle files worden uit de staging
+area verwijderd).
+- git rm [filename]: Verwijder een bestand uit de staging area.
+
+4. ------------
+- git commit: Dit gaat de staged files committen. Na het uitvoeren van het 
+commando wordt je text editor (Sublime) geopend, om een commit message toe te
+voegen. Commit messages worden in Git standaard geschreven alsof het een c
+ommando zou zijn, vb. "Voeg les 1 reflections toe"
