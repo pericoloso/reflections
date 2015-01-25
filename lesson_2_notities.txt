@@ -91,6 +91,12 @@ samenraapsels van code.
 Als er bij een merge conflicts waren, en je hebt deze opgelost, zie je in de
 merge commit toch nog een vermelding dat er een zich een conflict had voorgedaan.
 
+14. -----------
+De staging area is handig omdat je vaak aan heel wat dingen hebt gewerkt.
+Het laat je toe om enkel de dingen te committen die tot een bepaalde taak horen.
+Je kan dan nog een commit uitvoeren met de files die tot een tweede taak hoorden.
+Een commit hoort 'one single unit of work' te zijn.
+
 
 
 
