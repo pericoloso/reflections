@@ -1,0 +1,6 @@
+Question: When would you want to use a remote repository rather than 
+keeping all your work local?
+
+Wanneer je met mensen wil collaboreren is het onmogelijk om enkel met 
+een locale repository te werken.
+Er is dan nood aan een repository die voor iedereen bereikbaar is.
