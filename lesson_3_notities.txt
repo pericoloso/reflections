@@ -1,0 +1,6 @@
+1. ------------
+Als je commits uitvoert naar een GitHub repository, wordt doorgaans om je
+paswoord gevraagd, om unauthorized changes aan de repository te vermijden.
+Om te voorkomen dat je telkens opnieuw je passwoord moet ingeven kan je 
+gebruik maken van osxkeychain:
+- git config --global credential.helper osxkeychain
